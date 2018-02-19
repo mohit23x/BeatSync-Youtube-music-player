@@ -50,11 +50,11 @@ class Application(tk.Frame):
         menubar.add_cascade(label='File', menu=fileMenu)
 
 
-        favorite = tk.Menu(menubar)
-        favorite.add_command(label="Add favorite Channel", command=self.add_favorite_channel)
-        favorite.add_separator()
-        favorite.add_command(label="show favorite Channel", command=self.show_favorite_channel)
-        menubar.add_cascade(label='Favorite', menu=favorite)
+        channel = tk.Menu(menubar)
+        channel.add_command(label="Add favorite Channel", command=self.add_favorite_channel)
+        channel.add_separator()
+        channel.add_command(label="show favorite Channel", command=self.show_favorite_channel)
+        menubar.add_cascade(label='Channel', menu=channel)
 
         discover = tk.Menu(menubar)
         discover.add_command(label="Discover New Music", command=self.discover_new_music_function)
@@ -110,13 +110,13 @@ class Application(tk.Frame):
         ent4_button = ttk.Button(frame3, text='mute on-off', command=self.mutebutclick)
         ent4_button.pack(side='left', padx=5, pady=5)
 
-        ent5_button = ttk.Button(frame3, text='50% vol', command=self.volbutclick)
+        ent5_button = ttk.Button(frame3, text='next', command=self.next_track)
         ent5_button.pack(side='left', padx=5, pady=5)
 
-        ent6_button = ttk.Button(frame3, text='forward', command=self.forwbutclick)
+        ent6_button = ttk.Button(frame3, text='forward', command=lambda: self.forwbutclick(5))
         ent6_button.pack(side='left', padx=5, pady=5)
 
-        ent7_button = ttk.Button(frame3, text='backward', command=self.backwbutclick)
+        ent7_button = ttk.Button(frame3, text='backward', command=lambda: self.backwbutclick(5))
         ent7_button.pack(side='left', padx=5, pady=5)
 
         self.ent8_slider = ttk.Scale(frame3, from_ = 0, to=100, orient='horizontal',variable=self.var_for_scale, command=self.slidervol)
@@ -158,7 +158,8 @@ class Application(tk.Frame):
         self.master.bind('<space>', self.pausebutclick)
         self.master.bind('u', self.up_increase_volume)
         self.master.bind('d', self.down_decrease_volume)
-        
+        self.master.bind('n', self.next_track)
+        self.master.bind('p', self.previous_track)
 
 
 
@@ -171,6 +172,7 @@ class Application(tk.Frame):
         self.title_var.set('{} - {}'.format(var1, var2))
 
 
+
     def pausebutclick(self, event=''):
         print('pauses button clicked')
         self.player.pause()
@@ -181,8 +183,36 @@ class Application(tk.Frame):
     def backwbutclick(self, event):
         self.player.set_time(self.player.get_time() - 5000)
 
-    def volbutclick(self):
-        self.player.audio_set_volume(50)
+    def next_track(self, event=''):
+        cur_item = self.f4_tree.focus()
+        curr_ = self.f4_tree.next(cur_item)
+        v = self.f4_tree.item(curr_)
+        print(v)
+        print(v['text'])
+        print(v['values'][0])
+        print(v['values'][1])
+        self.link_offline_player(v['values'][1])
+        self.f4_tree.focus(curr_)
+        self.f4_tree.selection_set(curr_)
+        print('self.f4_tree.focus(curr_) -> {} '.format(self.f4_tree.focus(curr_)))
+
+        
+    def previous_track(self, event=''):
+        cur_item = self.f4_tree.focus()
+        curr_ = self.f4_tree.prev(cur_item)
+        v = self.f4_tree.item(curr_)
+        print(v)
+        print(v['text'])
+        print(v['values'][0])
+        print(v['values'][1])
+        self.link_offline_player(v['values'][1])
+        self.f4_tree.focus(curr_)
+        self.f4_tree.selection_set(curr_)
+        print('self.f4_tree.focus(curr_) -> {} '.format(self.f4_tree.focus(curr_)))
+
+        
+
+
 
     def mutebutclick(self, event):
         print('mute toggle')
@@ -288,9 +318,9 @@ class Application(tk.Frame):
         label_text = '{}%'.format(progress_percent)
         self.music_progress.set(label_text)
         self.progress_ba["value"] = progress_percent
-
-        self.after(100, self.progress_bar_func)
-
+        if (self.player.get_position() * 100) > 99:
+            print('calling next track')
+            self.next_track()
 
 
 
@@ -492,8 +522,9 @@ class Application(tk.Frame):
 
     def select_item(self, a):
         cur_item = self.f4_tree.focus()
-        print(self.f4_tree.item(cur_item))
+        print()        
         v = self.f4_tree.item(cur_item)
+        print(v)
         print(v['text'])
         print(v['values'][0])
         print(v['values'][1])
@@ -858,7 +889,7 @@ def delete_from_favorites(link):
 
 #-----------------------------------------if name == main
 root = tk.Tk()
-root.geometry("500x500+300+300")
+root.geometry("700x400")
 app = Application()
 
 app.mainloop()
