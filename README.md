@@ -6,7 +6,7 @@ Written in Python3.
 
 # Usage 
 It works on Windows and Linux OS, and for Mac i have not tested it but it should work.
-run the test4.py file by using the command -
+<br>Run the test4.py file by using the following command in terminal-
 
 python test4.py
 
@@ -21,4 +21,4 @@ python test4.py
 
 # Finally 
 I want to thank the devlopers of this beautiful pafy and vlc libraries which made my task quite easy to achieve.
-This music player works fine with the basic tasks but there are some features yet to be added in it. Any Help would be much appericiated.
+<br>This music player works fine with the basic tasks but there are some features yet to be added in it. Any Help would be much appericiated.
