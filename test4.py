@@ -321,6 +321,7 @@ class Application(tk.Frame):
         if (self.player.get_position() * 100) > 99:
             print('calling next track')
             self.next_track()
+        self.after(100, self.progress_bar_func)
 
 
 
@@ -408,7 +409,7 @@ class Application(tk.Frame):
             print('in elif condition - its a video page link')    
             self.pafy_function_fetch_and_show(temp_self_name)
         
-        elif temp_self_name.ends_with('.mp3'):
+        elif temp_self_name.endswith('.mp3'):
             print('you entered -> {}'.format(self.name.get()))
             self.link_offline_player(self.name.get())
 
