@@ -14,9 +14,13 @@ python test4.py
 # Dependencies
 
 - Pafy (pip install pafy)
+
 -  vlc (pip install python-vlc)
+
 - sqlite3 (availible by default in python3)
-- tkinter (pip install tkinter)
+
+- tkinter (availible by default in python3)
+
 - requests (pip install requests)
 
 # Finally 
