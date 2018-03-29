@@ -13,17 +13,13 @@ python test4.py
 
 # Dependencies
 
-- youtube-dl (pip install youtube-dl)
+- pip install youtube-dl
 
-- Pafy (pip install pafy)
+- pip install pafy
 
--  vlc (pip install python-vlc)
+-  pip install python-vlc
 
-- sqlite3 (availible by default in python3)
-
-- tkinter (availible by default in python3)
-
-- requests (pip install requests)
+- pip install requests
 
 
 # Shortcuts
@@ -36,6 +32,7 @@ python test4.py
     <li> B - backward 5 seconds </li>
     <li> U - volume up </li>
     <li> D - volume down </li>
+    <li> N - next track </li>
     <li> UP/DOWN ARROW KEY - to select the track from the list </li>
     <li> RIGHT ARROW KEY - to play the selected track </li>
 </ul>
@@ -43,3 +40,7 @@ python test4.py
 # Finally 
 I want to thank the devlopers of this beautiful pafy and vlc libraries which made my task quite easy to achieve.
 <br>This music player works fine with the basic tasks but there are some features yet to be added in it. Any Help would be much appericiated.
+
+# Video
+
+if you would like to watch a video tutorial then <a href='https://www.youtube.com/watch?v=TsjYsFGadyI' target='_blank'>Click Here</a><br>
