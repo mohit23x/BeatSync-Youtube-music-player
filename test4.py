@@ -169,7 +169,7 @@ class Application(tk.Frame):
         var1 = self.media.get_meta(0)
         var2 = self.media.get_meta(1)
 
-        self.title_var.set('{} - {}'.format(var1, var2))
+        #self.title_var.set('{} - {}'.format(var1, var2))
 
 
 
