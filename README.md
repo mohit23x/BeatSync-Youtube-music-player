@@ -13,15 +13,16 @@ It works on Windows and Linux OS, and MacOS.
 
 
 # Dependencies
+If you have python3 installed in your system, then run this commands in the terminal.
 
-- pip install youtube-dl
+-<pre><code>  pip install youtube-dl</code></pre>
 
-- pip install pafy
+- <pre><code>  pip install pafy</code></pre>
 
--  pip install python-vlc
+-  <pre><code>  pip install python-vlc</code></pre>
 
-- pip install requests
-
+- <pre><code>  pip install requests</code></pre>
+<br>
 
 # Shortcuts
 
@@ -40,7 +41,7 @@ It works on Windows and Linux OS, and MacOS.
 
 # Finally 
 I want to thank the devlopers of this beautiful pafy and vlc libraries which made my task quite easy to achieve.
-<br>This music player works fine with the basic tasks but there are some features yet to be added in it. Any Help would be much appericiated.
+<br>This music player works fine with the basic tasks but there are some features yet to be added in it.
 
 # Video
 
