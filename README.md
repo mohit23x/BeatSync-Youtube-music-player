@@ -15,13 +15,13 @@ It works on Windows and Linux OS, and MacOS.
 # Dependencies
 If you have python3 installed in your system, then run this commands in the terminal.
 
--<pre><code>  pip install youtube-dl</code></pre>
+ <pre><code>  pip install youtube-dl</code></pre>
 
-- <pre><code>  pip install pafy</code></pre>
+ <pre><code>  pip install pafy</code></pre>
 
--  <pre><code>  pip install python-vlc</code></pre>
+  <pre><code>  pip install python-vlc</code></pre>
 
-- <pre><code>  pip install requests</code></pre>
+ <pre><code>  pip install requests</code></pre>
 <br>
 
 # Shortcuts
