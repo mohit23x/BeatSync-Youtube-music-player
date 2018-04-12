@@ -27,16 +27,16 @@ If you have python3 installed in your system, then run this commands in the term
 # Shortcuts
 
 <ul>
-    <li>SPACE BAR - pause/play </li>
-    <li> P - pause/play </li>
-    <li> M - mute/unmute </li>
-    <li> F - forward 5 seconds </li>
-    <li> B - backward 5 seconds </li>
-    <li> U - volume up </li>
-    <li> D - volume down </li>
-    <li> N - next track </li>
-    <li> UP/DOWN ARROW KEY - to select the track from the list </li>
-    <li> RIGHT ARROW KEY - to play the selected track </li>
+    <blockquote>SPACE BAR - pause/play </blockquote>
+    <blockquote> P - pause/play </blockquote>
+    <blockquote> M - mute/unmute </blockquote>
+    <blockquote> F - forward 5 seconds </blockquote>
+    <blockquote> B - backward 5 seconds </blockquote>
+    <blockquote> U - volume up </blockquote>
+    <blockquote> D - volume down </blockquote>
+    <blockquote> N - next track </blockquote>
+    <blockquote> UP/DOWN ARROW KEY - to select the track from the list </blockquote>
+    <blockquote> RIGHT ARROW KEY - to play the selected track </blockquote>
 </ul>
 
 # Finally 
