@@ -1,14 +1,15 @@
 # BeatSync-Youtube-music-player
-it genrates a tkinter GUI - music player, which can be used to play songs locally or from Youtube. <br>
-We can save our favorite artist's channel URL and retrive their new releases.
+The Music Player you were searching for, this can be used to play songs from Youtube or local directory. <br>
+<br>
+ - Save your favorite artist's channel and it will show their recent tracks.
 
 Written in Python3.
 
 # Usage 
-It works on Windows and Linux OS, and for Mac i have not tested it but it should work.
+It works on Windows and Linux OS, and MacOS.
 <br>Run the test4.py file by using the following command in terminal-
 
-python test4.py
+<pre>   <code>python test4.py</code></pre>
 
 
 # Dependencies
@@ -36,11 +37,11 @@ python test4.py
     <li> UP/DOWN ARROW KEY - to select the track from the list </li>
     <li> RIGHT ARROW KEY - to play the selected track </li>
 </ul>
-    
+
 # Finally 
 I want to thank the devlopers of this beautiful pafy and vlc libraries which made my task quite easy to achieve.
 <br>This music player works fine with the basic tasks but there are some features yet to be added in it. Any Help would be much appericiated.
 
 # Video
 
-if you would like to watch a video tutorial then <a href='https://www.youtube.com/watch?v=TsjYsFGadyI' target='_blank'>Click Here</a><br>
+If you would like to watch a video tutorial on Youtube then <a href='https://www.youtube.com/watch?v=TsjYsFGadyI'>Click Here</a><br>
