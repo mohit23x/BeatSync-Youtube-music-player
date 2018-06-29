@@ -50,6 +50,6 @@ If you have python3 installed in your system, then run this commands in the term
 I want to thank the devlopers of this beautiful pafy and vlc libraries which made my task quite easy to achieve.
 <br>This music player works fine with the basic tasks but there are some features yet to be added in it.
 
-# Video
+# Tutorial
 
 If you would like to watch a video tutorial on Youtube then <a href='https://www.youtube.com/watch?v=TsjYsFGadyI'>Click Here</a><br>
