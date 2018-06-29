@@ -8,9 +8,9 @@ The Youtube Music Player, this can be used to play songs from Youtube or local d
  - browse through music files present in your local system
  - add remove channels
  - progress bar for now playing track
- 
+ <br>
 
-Written in Python3.
+<u>Written in Python3.</u>
 
 # Usage 
 It works on Windows and Linux OS, and MacOS.
