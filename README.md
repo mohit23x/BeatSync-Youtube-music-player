@@ -1,7 +1,14 @@
 # BeatSync-Youtube-music-player
-The Music Player you were searching for, this can be used to play songs from Youtube or local directory. <br>
+The Youtube Music Player, this can be used to play songs from Youtube or local directory. <br>
 <br>
- - Save your favorite artist's channel and it will show their recent tracks.
+ - Save your favorite artist's Youtube channel Url
+ - check recent tracks by selecting artist name
+ - check 3 latest tracks by all the artist at one place
+ - paste any video's url in search box and it will play its audio
+ - browse through music files present in your local system
+ - add remove channels
+ - progress bar for now playing track
+ 
 
 Written in Python3.
 
