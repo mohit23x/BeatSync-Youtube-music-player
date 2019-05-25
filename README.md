@@ -31,6 +31,9 @@ If you have python3 installed in your system, then run this commands in the term
  <pre><code>  pip install requests</code></pre>
 <br>
 
+Also make sure, You have VLC 32 bit installed in your system.
+
+
 # Shortcuts
 
 <ul>
